@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsloth AI</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @media (max-width: 1024px) {
+    #signup{
+        flex-direction: column;
+    }
+    .image-gallery {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .text-content {
+        margin-left: 0;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #heading2 p {
+        font-size: 32px;
+    }
+    
+    .F45 {
+        flex-direction: column;
+    }
+    
+    .F4, .F5 {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    #imd {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .subscriptions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .free, .pro, .entp {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    #signup{
+        flex-direction: column;
+    }
+    #header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    
+    .logoContainer {
+        margin-bottom: 15px;
+    }
+    
+    .navLinks {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #heading2 button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .footer {
+        flex-wrap: wrap;
+    }
+    
+    .footer div {
+        width: 50%;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    #signup{
+        flex-direction: column;
+    }
+    #heading2 p {
+        font-size: 24px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .footer div {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .text h1 {
+        font-size: 30px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .text-content {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <section id = "header">
+        <div class="logoContainer">
+            <img src="unslothlogo.png" alt="unslothlogo">
+            <h2>unsloth</h2>
+        </div>
+        <div class="navLinks">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <button class="docButton">Documentation</button>
+        </div>
+    
+        
+    </section>
+    <section id = "heading2">
+        <div>
+            <p><span class="highlight">Easily</span> finetune & train LLMs </p>
+            <p>Get <span class="highlight">faster</span> with unsloth</p>
+
+        </div>
+        <div>
+            <button>Join our Discord</button>
+            <button>Start for free</button>
+        </div>
+
+    </section>
+    <section id = "signup">
+        <div>
+            <img src="slothmid.png" alt="image" id="midimg">
+        </div>
+       
+       <div class="signin">
+            <p  style="margin: 8px; font-weight: bold; font-size: 30px;">Sign up to our newsletter </p>
+            <p style="margin: 8px;">We'll share important news & more!</p> 
+            <input type="email" placeholder="email">
+            <button>Submit</button>
+
+       </div>
+    </section>
+    <section>
+        <p style="text-align: center; padding: 40px; font-size: larger;font-weight: bold;">Unsloth is trusted by teams at</p>
+        <div class="logo-container">
+            <img src="microsoftLogo.png" alt="Microsoft" style="height: 90px;">
+            <img src="MetaLogo.png" alt="Meta">
+            <img src="nasalogo.png" alt="NASA">
+            <img src="white-apple-logo-wallpaper.png" alt="Apple">
+            <img src="walmart-logo.png" alt="Walmart" style="height: 35px;">
+            <img src="googleLogo.png" alt="Google">
+            <img src="canvaLogo.png" alt="Canva">
+            <img src="logo-linkedin.png" alt="LinkedIn">
+            <img src="Deloitte-logo.png" alt="Deloitte">
+        </div>
+    </section>
+    <section>
+        <div class="image-gallery">
+            <div class="imageCard">
+                <img src="reasoningimg.png" alt="Image 1">
+                <h3>Train your own Reasoning Model</h3>
+                <p>Feb 5, 2025</p>
+            </div>
+            <div class="imageCard">
+                <img src="deepseekimg.png" alt="Image 2">
+                <h3>Run 1.58-bit Dynamic DeepSeek-R1</h3>
+                <p>Jan 27, 2025</p>
+            </div>
+            <div class="imageCard">
+                <img src="img3.png" alt="Image 3">
+                <h3>Phi-4 Finetuning + Bug Fixes</h3>
+                <p>Jan 10, 2025</p>
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <button id="viewMore">View more news</button>
+        <p style="text-align: center;padding: 20px 50px;font-size: 42px;font-family: italic;font: bolder;">Train your own custom ChatGPT in <span style="color: #00a67d;">24 hrs,</span> not 30 days.</p>
+        <div class="usablity">
+            <p>30x faster than FA2 + 30% accuracy</p>
+        </div>
+        <div class="usablity">
+            <p>90% less memory usage than FA2</p>
+
+        </div>
+        <div class="usablity">
+            <p>LoRA and QLoRA fine-tuning support</p>
+        </div>
+    </section>
+    <section>
+        <div class="card">
+            <div class="text-content">
+                <h2>How are we faster?</h2>
+                <p>By manually deriving all compute heavy maths steps and handwriting GPU kernels, Unsloth can magically make training faster without any hardware changes.</p>
+                <a href="#" class="btn">Find out more</a>
+            </div>
+            <div class="image-container">
+                <img src="Limg1.png" alt="Illustration">
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="Limg2.png" alt="Illustration">
+            </div>
+            <div class="text-content">
+                <h2>1 GPU or 100 GPUs</h2>
+                <p>10x faster on a single GPU and up to 32x faster on multiple GPU systems compared to Flash Attention 2 (FA2).
+                    We support NVIDIA GPUs from Tesla T4 to H100, and we’re portable to AMD and Intel GPUs.</p>
+                <a href="href = "#" class= "btn">Find out more</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="text">
+            <p>The details</p>
+            <h1>We're making AI training </h1>
+            <h1>easier for everyone</h1>
+        </div>
+    </section>
+    <section>
+        <div class="cactusCard">
+            <div class="cactus">
+                <h3>Faster hardware is getting harder to make. <br>Armed with our maths and coding expertise, <br>we specialize in optimizing AI and ML workloads.</h3>
+                <a href="href = "#" class= "btn">Find out more</a>
+            </div>
+            <div class="cactus-img">
+                <img src="Fimg3.png" alt="Cactus Image">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="F45">
+            <div class="F4">
+                <h3>2x faster inference - even faster in the works</h3>
+                <a id="Fbtn1" href="href = "#" class= "btn">Contact us</a>
+                <img src="Fimg4.png" alt="image" id="imd">
+
+            </div>
+            <div class="F5">
+                <h3>Don't forget to join our newsletter!</h3>
+                <a id="Fbtn2" href="href = "#" class= "btn">Subscribe</a>
+                <img src="Fimg5.png" alt="image" id="imd">
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 style="text-align: center;font: 100px; font-size: 50px;">Pricing</h1>
+    </section>
+   
+    <section>
+        <div class="subscriptions">
+            <div class="free">
+                <h1>Free</h1>
+                <p>Freeware of our standard version of unsloth</p>
+                <a id="Free-btn" href="href = "#" class= "btn">Get started</a>
+                <ul id="list">
+                    <li>Open-source</li>
+                    <li>Supports Mistral, Gemma</li>
+                    <li>Supports LLama 1, 2, 3</li>
+                    <li>Single GPU support</li>
+                    <li>Supports 4 bit, 16 bit LoRA</li>
+
+                </ul>
+
+
+            </div>
+            <div class="pro">
+                
+                <h1> Unsloth Pro</h1>
+                <p>Unlock multi GPU support + 2.5x faster training + 20% less VRAM</p>
+                <a id="Pro-btn" href="href = "#" class= "btn">Contact us</a>
+                <ul id="list">
+                <li>2.5x number of GPUs faster than FA2</li>
+                <li>20% less memory than OSS</li>
+                <li>Multi GPU support</li>
+                <li>Up to 8 GPUS support</li>
+                <li>For any usecase</li>
+
+
+                   </ul>
+            </div>
+            <div class="entp">
+                <h1>Unstolh Enterprise</h1>
+                <p>Unlock 30x faster training + multi-node support + 30% accuracy</p>
+                <a id="entp-btn" href="href = "#" class= "btn">Contact us</a>
+                <ul id="list">
+                    <li>32x number of GPUs faster than FA2</li>
+                    <li>up to +30% accuracy</li>
+                    <li>5x faster inference</li>
+                    <li>Supports full training</li>
+                    <li>All Pro plan features</li>
+                    <li>Multi-node support</li>
+                    <li>Customer support</li>
+
+
+
+
+                </ul>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="last-heading">
+        <h1>Ready to use unsloth?</h1>
+        <a  href="href = "#" class= "btn">Get Started for free</a>
+
+    </section>
+    <section>
+        <div class="footer">
+            <div class="1">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Linkedin</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+
+            </div>
+            <div class="2">
+                <h4>Product</h4>
+                <p>Documenttion</p>
+                <p>Pricing</p>
+                <p>Download</p>
+                <p>Models</p>
+
+            </div>
+            <div class="3">
+                <h4>Community</h4>
+                <p>Twitter (X)</p>
+                <p>Reddit</p>
+                <p>Hugging Face</p>
+                <p>Discord</p>
+                <p>Linkedin</p>
+
+            </div>
+            <div class="4">
+
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+           Unsloth Replica All rights reserved
+    </footer>
+
+
+</body>
+</html>

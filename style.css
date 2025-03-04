@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+}
+section{
+    margin-bottom: 70px;
+}
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#header img {
+    height: 40px;
+}
+#header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px;
+}
+.navLinks {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #333;
+}
+.navLinks a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navLinks a:hover {
+    color: #00a67d;
+}
+.docButton {
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.docButton:hover {
+    background-color: #00a67d;
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#heading2 {
+    text-align: center;
+    padding: 50px 20px;
+}
+#heading2 p {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-style: italic;
+
+}
+
+
+.highlight{
+    font-family: 'Dancing Script', cursive;
+    color: #00a67d;
+}
+#heading2 button {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#heading2 button:first-child{
+    background-color: black;
+    color: white;
+}
+
+#heading2 button:first-child::before {
+    content: "🎮 ";
+}
+#heading2 button:last-child {
+    background-color: #00a67d;
+    color: white;
+}
+#heading2 button:first-child:hover{
+    background-color: blue;
+}
+#heading2 button:last-child:hover{
+    background-color: darkgreen;
+}
+#midimg{
+   display: flex;
+   width: 45%;
+}
+#signup{
+    display: flex;
+    border-radius: 25px;
+    background:#c8ffbd;
+    padding: 0.2px;
+}
+.signin{
+    margin: 150px;
+    
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.logo-container img {
+    height: 50px;
+    object-fit: contain;
+}
+.imageCard {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.imageCard img:hover {
+    transform: scale(1.05);
+   
+
+
+}
+.imageCard h3:hover{
+    color: #9ff0c8;
+
+}
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.imageCard h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.imageCard p {
+    font-size: 14px;
+    color: #666;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#viewMore{
+    display: block;
+    margin: 0 auto;
+    padding: 30px 35px;
+    background-color: #fff;
+    color: rgb(5, 0, 0);
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 8%;
+    
+}
+#viewMore:hover{
+    background-color: #333;
+    color: #fff;
+}
+.usablity{
+    display: inline-flex;
+    
+    gap: 20px;
+   
+   
+    border-radius: 50px;
+    padding: 40px;
+    border-style: solid;
+    margin: 8px 15px;
+}
+.image-container img{
+    width: 500px;
+    border-radius: 12px;
+    margin-left: 50px;
+}
+.card{
+    display: flex;
+   margin-left: 60px;
+   margin-right: 60px;
+    align-items: center;
+   
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
+    
+
+}
+.text-content{
+    flex: 1;
+    padding-right: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+
+}
+.text-content h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    border: 2px solid black;
+    border-radius: 35px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    margin-top: 50px;
+    
+}
+.btn:hover {
+    background: black;
+    color: white;
+}
+.text{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+.text p{
+    margin: 25px;
+    font: bolder;
+}
+.text h1{
+    font-size: 45px;
+}
+ /* .cactusCard{
+    display: flex;
+    
+
+}
+.cactus-img{
+    
+    max-width: 40vw; /* Limits the image width to 40% of viewport width */
+    /* max-height: 70vh; /* Limits the height to 70% of viewport height */
+    /* width: auto; Maintains aspect ratio */
+    /* height: auto; Maintains aspect ratio */
+    /* display: block; Prevents inline spacing issues */
+   /* / margin: 0 auto; Centers the image */
+    /* object-fit: cover; */ 
+
+    .cactusCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e8f5e9;
+        border-radius: 24px;
+        padding: 50px;
+        margin: 40px auto;
+        max-width: 1200px;
+      }
+      
+      .cactus {
+        flex: 1;
+        padding-right: 40px;
+      }
+      
+      .cactus h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #222;
+        margin-bottom: 30px;
+      }
+      
+      .btn {
+        display: inline-block;
+        background-color: white;
+        color: #222;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 40px;
+        border: 2px solid #ddd;
+        transition: all 0.3s ease;
+      }
+      
+      .btn:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+      
+      .cactus-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .cactus-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .cactusCard {
+          flex-direction: column;
+          padding: 30px;
+        }
+        
+        .cactus {
+          padding-right: 0;
+          margin-bottom: 30px;
+        }
+        
+        .cactus h3 {
+          font-size: 1.8rem;
+        }
+      }
+.F45{
+    display: flex;
+    gap: 20px;
+    max-width: 100%px;
+    width: 100%;
+    justify-content: center;
+}
+.F4, .F5 {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+}
+#imd{
+    max-width: 100px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0px; /* Distance from bottom */
+    right: 70px;  /* Distance from right */
+    width: 400px;  /* Adjust size */
+    height: 300px;
+}
+.F4{
+    background-color: rgb(217, 196, 224);
+}
+.F5{
+    background-color: #e4e4d380;
+}
+.F4 h3{
+    font-size: 29px;
+    padding: 50px;
+    font: 200;
+}
+.F5 h3{
+    font-size: 29px;
+    padding: 50px;
+    font: 200;
+}
+#Fbtn1{
+    background-color: rgb(217, 196, 224);
+    border-color: #000;
+
+
+}
+#Fbtn1:hover{
+    background-color: black;
+    color: white;
+}
+#Fbtn2{
+    background-color: #e4e4d380;
+    border-color: #000;
+
+
+}
+#Fbtn2:hover{
+    background-color: black;
+    color: white;
+}
+.subscriptions{
+    display: flex;
+    gap: 20px;
+    max-width: 100%px;
+    width: 100%;
+    justify-content: center;
+   
+}
+.free{
+    background-color: #FFFFFF;
+    max-width: 32%;
+    height: 500px;
+}
+.pro{
+    background-color: #E6F5E6;
+    max-width: 32%;
+    height: 510px;
+}
+.entp{
+    background-color:#E6E6FA  ;
+    max-width: 32%;
+    height: 550px;
+}
+#list{
+    padding-top: 28px;
+    
+    list-style-type: none; /* Remove default bullets */
+     padding-left: 1.5rem; 
+}
+#list li{
+    position: relative;
+    padding-left: 1.5rem; /* Space for the checkmark */
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+#list li::before{
+  content: "✓"; /* Unicode checkmark character */
+  position: absolute;
+  left: 0;
+  color: #4CAF50; /* Green color for the checkmark, can be changed */
+  font-weight: bold;
+}
+
+.subscriptions h1,p{
+    padding: 25px;
+    font-size: larger;
+    padding-bottom: 0px;
+
+    
+
+}
+#last-heading {
+    text-align: center;
+    font-size: 50px;
+}
+.footer{
+    display: flex;
+
+}
+.footer div{
+    border: 1px solid #e0e0e0;
+    width: 25%;
+    height: 350px;
+}
+.footer div h4{
+    padding: 40px;
+}
+.footer div p{
+    padding-left: 40px;
+    font: weight 1px; 
+    font-size: small;
+}
+.footer div p:hover{
+    color: #9ff0c8;
+    transition: color 0.5s ease;
+}
+
+/* Fix for text overflow in signup section */
+#signup {
+    display: flex;
+    border-radius: 25px;
+    background: #c8ffbd;
+    padding: 20px;
+    margin: 40px 20px;
+    align-items: center;
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+#midimg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.signin {
+    flex: 1;
+    padding: 20px;
+    word-wrap: break-word; /* Ensure text wraps properly */
+    overflow-wrap: break-word; /* Additional wrapping support */
+}
+
+.signin p {
+    margin: 8px 0;
+    max-width: 100%; /* Constrain text width */
+}
+
+.signin p:first-child {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.signin input[type="email"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.signin button {
+    padding: 12px 20px;
+    background-color: #00a67d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Responsive styles for signup section */
+@media (max-width: 768px) {
+    #signup {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    
+    #midimg {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+    
+    .signin {
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Ensure full width */
+    }
+    
+    .signin p:first-child {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signin p:first-child {
+        font-size: 22px;
+    }
+    
+    .signin p {
+        padding: 0 10px; /* Add some padding on very small screens */
+    }
+    
+    .signin input[type="email"] {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+    .signin button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
