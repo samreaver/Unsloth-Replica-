@@ -140,44 +140,38 @@
     </style>
 </head>
 <body>
-    <section id = "header">
-        <div class="logoContainer">
-            <img src="unslothlogo.png" alt="unslothlogo">
-            <h2>unsloth</h2>
+    <section id="header">
+        <div class="logoContainer" style="flex: 1; justify-content: flex-start;">
+            <img src="unslothlogo.png" alt="unslothlogo" style="height: 60px;"> <!-- Increase logo size -->
+            <h2 style="margin: 0; font-size: 32px;">unsloth</h2> <!-- Increase text size -->
         </div>
-        <div class="navLinks">
+        <div class="navLinks" style="flex: 1; justify-content: center;"> <!-- Center the navigation links -->
             <a href="#">About</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
             <button class="docButton">Documentation</button>
         </div>
-    
-        
     </section>
-    <section id = "heading2">
+    <section id="heading2" style="margin-top: 100px;"> <!-- Add margin-top to ensure text is not obstructed -->
         <div>
             <p><span class="highlight">Easily</span> finetune & train LLMs </p>
             <p>Get <span class="highlight">faster</span> with unsloth</p>
-
         </div>
         <div>
             <button>Join our Discord</button>
             <button>Start for free</button>
         </div>
-
     </section>
-    <section id = "signup">
-        <div>
+    <section id="signup">
+        <div class="imageContainer">
             <img src="slothmid.png" alt="image" id="midimg">
         </div>
-       
-       <div class="signin">
-            <p  style="margin: 8px; font-weight: bold; font-size: 30px;">Sign up to our newsletter </p>
-            <p style="margin: 8px;">We'll share important news & more!</p> 
+        <div class="signin">
+            <p style="margin: 8px; font-weight: bold; font-size: 30px;">Sign up to our newsletter</p>
+            <p style="margin: 8px;">We'll share important news & more!</p>
             <input type="email" placeholder="email">
             <button>Submit</button>
-
-       </div>
+        </div>
     </section>
     <section>
         <p style="text-align: center; padding: 40px; font-size: larger;font-weight: bold;">Unsloth is trusted by teams at</p>
@@ -224,6 +218,17 @@
 
         </div>
         <div class="usablity">
+            <p>LoRA and QLoRA fine-tuning support</p>
+        </div>
+    </section>
+    <section class="info-boxes">
+        <div class="info-box">
+            <p>30× faster than FA2 + 30% accuracy</p>
+        </div>
+        <div class="info-box">
+            <p>90% less memory usage than FA2</p>
+        </div>
+        <div class="info-box">
             <p>LoRA and QLoRA fine-tuning support</p>
         </div>
     </section>
